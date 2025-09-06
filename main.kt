@@ -3,10 +3,19 @@ enum class Genero {
     Mujer
 }
 
+fun saludo(saludo: String = "Hola", nombre: String)
+{
+    println("$saludo $nombre")
+}
+
+fun genero(genero: Genero) : String
+{
+    return "Mi genero es: $genero"
+}
+
 fun main() {
-    println("Hola Mundo!")
     val nombre = "Enrique Diaz"
-    println("Mi nombre es: $nombre")
+    saludo("Hola a todos, yo soy:", nombre)
     val materia = "Aplicaciones Moviles"
     println("La materia es: $materia")
     val peso : Int = 80
@@ -19,5 +28,5 @@ fun main() {
     if (es_par) { println("Mi edad es par.") }
     else { println("Mi edad es impar.") }
     val genero = Genero.Hombre
-    println("Yo soy $genero")
+    println(genero(genero));
 }
