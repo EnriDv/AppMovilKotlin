@@ -1,7 +1,8 @@
-/**
- * You can edit, run, and share this code.
- * play.kotlinlang.org
- */
+
 fun main() {
-    println("Hello, world!!!")
+    println("Hola Mundo!")
+    val nombre = "Enrique Diaz"
+    println("Mi nombre es: $nombre")
+    val materia = "Aplicaciones Moviles"
+    println("La materia es: $materia")
 }
