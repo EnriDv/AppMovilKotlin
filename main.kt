@@ -8,14 +8,14 @@ fun saludo(saludo: String = "Hola", nombre: String)
     println("$saludo $nombre")
 }
 
-fun genero(genero: String) : String
+fun genero(genero: Genero) : String
 {
     return "Mi genero es: $genero"
 }
 
 fun main() {
     val nombre = "Enrique Diaz"
-    saludo("Hola a todos, yo soy:", nombre)
+    saludo("Hola a todos, yo soy:", nombre) //Hola a todos, yo soy: Enrique Diaz
     val materia = "Aplicaciones Moviles"
     println("La materia es: $materia")
     val peso : Int = 80
@@ -28,5 +28,5 @@ fun main() {
     if (es_par) { println("Mi edad es par.") }
     else { println("Mi edad es impar.") }
     val genero = Genero.Hombre
-    println(genero(genero));
+    println(genero(genero)); //Mi genero es: Hombre
 }
