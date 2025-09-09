@@ -131,7 +131,15 @@ data class Estudiante(val nombre: String, val edad: Int,){
     fun esMayorEdad() : Boolean = edad > 17
 }
 
+data class Persona
+{
+    
+}
+
 sealed interface Forma
 class circulo( val radio: Double): Forma
 class rectangulo( val ancho: Double, val alto: Double): Forma
+
+// poner todo dentro de una clase persona (todas las cosas de persona)
+// poner funciones dentro de la clase
 
